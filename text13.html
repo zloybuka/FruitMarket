@@ -1,0 +1,153 @@
+﻿<HTML>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Фруктовый сок</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="img/27.ico"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body background="img/10f.png">
+    <main>
+        <div class="bt1">
+            <a href="titl.html"><img src="img/27i.png" style="height: 39px;vertical-align: middle;border-radius: 5px;"></a>
+            <a href="index.html"><button class="bt_home">Каталог</button></a>
+            <button id="checkout" onclick="(document.getElementById('close').style.display = 'inline-block');(document.getElementById('clear_cart').style.display = 'inline-block')">Просмотр корзины</button>
+            <a href="basket.html"><img src="img/k.png" style="height: 39px;vertical-align: middle;border-radius: 5px;"></a>
+        </div>
+        <button id="sortByPrice">Сортировка по цене<span style="font-size:20px;">🠑</span></button>
+        <button id="sortByName">Сортировка по названию<span style="font-size:20px;">🠑</span></button>
+        <input id="filter" type="text" placeholder="Найти">
+    </main>
+    <button id="close" onclick="(document.getElementById('close').style.display = 'none');(document.getElementById('clear_cart').style.display = 'none')"><img src="img/31.png"></button>
+    <button id="clear_cart"><img src="img/clear.png" style="height:25px;weight:25px;"></button>
+    <section id="cards">
+        <div class="tovar1">
+            <img src="img/48.png">
+            <p><span class="tovar_title">Апельсиновый Сок</span></p>
+            <p>Цена: <span class="tovar_price">100</span> руб за 1 л</p>
+            <span>
+                <button class="quantity-arrow-minus"> - </button>
+                <input class="input1" type="number" min="1" max="99" step="1" value="1" size="4" maxlenght="2">
+                <button class="quantity-arrow-plus"> + </button>
+            </span>
+            <button class="add_tovar" data-id="48" onclick="(document.getElementById('close').style.display = 'inline-block');(document.getElementById('clear_cart').style.display = 'inline-block')">Добавить в корзину</button>
+        </div>
+        <div class="tovar1">
+            <img src="img/45.png">
+            <p><span class="tovar_title">Вишневый Сок</span></p>
+            <p>Цена: <span class="tovar_price">100</span> руб за 1 л</p>
+            <span>
+                <button class="quantity-arrow-minus"> - </button>
+                <input class="input1" type="number" min="1" max="99" step="1" value="1" size="4" maxlenght="2">
+                <button class="quantity-arrow-plus"> + </button>
+            </span>
+            <button class="add_tovar" data-id="45" onclick="(document.getElementById('close').style.display = 'inline-block');(document.getElementById('clear_cart').style.display = 'inline-block')">Добавить в корзину</button>
+        </div>
+        <div class="tovar1">
+            <img src="img/126.png">
+            <p> <span class="tovar_title">Гранатовый Сок</span></p>
+            <p>Цена: <span class="tovar_price">100</span> руб за 1 кг</p>
+            <span>
+                <button class="quantity-arrow-minus"> - </button>
+                <input class="input1" type="number" min="1" max="99" step="1" value="1" size="4" maxlenght="2">
+                <button class="quantity-arrow-plus"> + </button>
+            </span>
+            <button class="add_tovar" data-id="126" onclick="(document.getElementById('close').style.display = 'inline-block');(document.getElementById('clear_cart').style.display = 'inline-block')">Добавить в корзину</button>
+        </div>
+        <div class="tovar1">
+            <img src="img/127.png">
+            <p> <span class="tovar_title">Грушевый Сок</span></p>
+            <p>Цена: <span class="tovar_price">100</span> руб за 1 кг</p>
+            <span>
+                <button class="quantity-arrow-minus"> - </button>
+                <input class="input1" type="number" min="1" max="99" step="1" value="1" size="4" maxlenght="2">
+                <button class="quantity-arrow-plus"> + </button>
+            </span>
+            <button class="add_tovar" data-id="127" onclick="(document.getElementById('close').style.display = 'inline-block');(document.getElementById('clear_cart').style.display = 'inline-block')">Добавить в корзину</button>
+        </div>
+        <div class="tovar1">
+            <img src="img/46.png">
+            <p> <span class="tovar_title">Клубничный Сок</span></p>
+            <p>Цена: <span class="tovar_price">120</span> руб за 1 л</p>
+            <span>
+                <button class="quantity-arrow-minus"> - </button>
+                <input class="input1" type="number" min="1" max="99" step="1" value="1" size="4" maxlenght="2">
+                <button class="quantity-arrow-plus"> + </button>
+            </span>
+            <button class="add_tovar" data-id="46" onclick="(document.getElementById('close').style.display = 'inline-block');(document.getElementById('clear_cart').style.display = 'inline-block')">Добавить в корзину</button>
+        </div>
+
+        <div class="tovar1">
+            <img src="img/47.png">
+            <p><span class="tovar_title">Мультифрукт Сок</span></p>
+            <p>Цена: <span class="tovar_price">120</span> руб за 1 л</p>
+            <span>
+                <button class="quantity-arrow-minus"> - </button>
+                <input class="input1" type="number" min="1" max="99" step="1" value="1" size="4" maxlenght="2">
+                <button class="quantity-arrow-plus"> + </button>
+            </span>
+            <button class="add_tovar" data-id="47" onclick="(document.getElementById('close').style.display = 'inline-block');(document.getElementById('clear_cart').style.display = 'inline-block')">Добавить в корзину</button>
+        </div>
+        <div class="tovar1">
+            <img src="img/44.png">
+            <p><span class="tovar_title">Персиковый Сок</span></p>
+            <p>Цена: <span class="tovar_price">100</span> руб за 1 л</p>
+            <span>
+                <button class="quantity-arrow-minus"> - </button>
+                <input class="input1" type="number" min="1" max="99" step="1" value="1" size="4" maxlenght="2">
+                <button class="quantity-arrow-plus"> + </button>
+            </span>
+            <button class="add_tovar" data-id="44" onclick="(document.getElementById('close').style.display = 'inline-block');(document.getElementById('clear_cart').style.display = 'inline-block')">Добавить в корзину</button>
+        </div>
+        <div class="tovar1">
+            <img src="img/128.png">
+            <p> <span class="tovar_title">Сливовый Сок</span></p>
+            <p>Цена: <span class="tovar_price">100</span> руб за 1 кг</p>
+            <span>
+                <button class="quantity-arrow-minus"> - </button>
+                <input class="input1" type="number" min="1" max="99" step="1" value="1" size="4" maxlenght="2">
+                <button class="quantity-arrow-plus"> + </button>
+            </span>
+            <button class="add_tovar" data-id="128" onclick="(document.getElementById('close').style.display = 'inline-block');(document.getElementById('clear_cart').style.display = 'inline-block')">Добавить в корзину</button>
+        </div>
+
+        <div class="tovar1">
+            <img src="img/43.png">
+            <p> <span class="tovar_title">Яблочный Сок</span></p>
+            <p>Цена: <span class="tovar_price">100</span>руб за 1 л</p>
+            <span>
+                <button class="quantity-arrow-minus"> - </button>
+                <input class="input1" type="number" min="1" max="99" step="1" value="1" size="4" maxlenght="2">
+                <button class="quantity-arrow-plus"> + </button>
+            </span>
+            <button class="add_tovar" data-id="43" onclick="(document.getElementById('close').style.display = 'inline-block');(document.getElementById('clear_cart').style.display = 'inline-block')">Добавить в корзину</button>
+        </div>
+
+        <div id="cart_content"></div>
+    </section>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            $("#filter").keyup(function () {
+
+                var filter = $(this).val(),
+                    count = 0;
+
+                $('#cards div').each(function () {
+
+                    if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+                        $(this).hide();
+
+                    } else {
+                        $(this).show('');
+                        count++;
+                    }
+                });
+            });
+        }
+    </script>
+    <script src="ScriptFiltr.js"></script>
+    <script src="script.js"></script>
+</body>
